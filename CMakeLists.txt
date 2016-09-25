@@ -40,7 +40,7 @@ include(ispc)
 mark_as_advanced(CLEAR CMAKE_CXX_COMPILER)
 
 if (WIN32)
-  include(msvc.cmake)
+  include(msvc)
 else ()
   if (${CMAKE_CXX_COMPILER_ID} STREQUAL "Intel")
     include(icc)
